@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="ky.module.ModuleCore"/>
+    <classEntry path="ky.module.time.TimeBase"/>
+    <classEntry path="ky.module.time.NumericTime"/>
+    <classEntry path="ky.module.time.PointerTime"/>
+    <classEntry path="ky.enumerate.CutoverMode"/>
+    <classEntry path="ky.module.weather.WeatherData"/>
+    <classEntry path="ky.enumerate.MobileCommandMode"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
