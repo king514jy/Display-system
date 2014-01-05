@@ -16,8 +16,8 @@
 			this.removeEventListener(Event.ADDED_TO_STAGE,init);
 			bottomMc = this.getChildByName("bottom_mc") as Sprite;
 			copyrightMc = this.getChildByName("copyright_mc") as Sprite;
-			//bottomMc.width = stage.stageWidth;
-			//copyrightMc.x = (stage.stageWidth - copyrightMc.width) * 0.5;
+			bottomMc.width = stage.stageWidth;
+			copyrightMc.x = (stage.stageWidth - copyrightMc.width) * 0.5;
 		}
 	}
 }

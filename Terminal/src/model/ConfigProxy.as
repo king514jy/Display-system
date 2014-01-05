@@ -1,4 +1,4 @@
-package model
+﻿package model
 {
 	import flash.events.Event;
 	import flash.filesystem.File;
@@ -49,6 +49,7 @@ package model
 				//var file2:File = File.applicationDirectory.resolvePath("module/");
 				//file2.copyTo(file,true);
 			//}
+			playListXML = <data></data>
 			url = file.url+File.separator+"config.xml";
 			var urlLoader:URLLoader = new URLLoader();
 			urlLoader.load(new URLRequest(url));
@@ -74,7 +75,7 @@ package model
 			playList = new Vector.<PlayItem>();
 			var moLe:uint = xml.moduleList.item.length();
 			var playLe:uint = xml.playList.item.length();
-			playListXML = xml.playList;
+			playListXML.appendChild(xml.playList);
 			for(var i:int=0;i<moLe;i++)
 			{
 				var moItem:ModuleItem = new ModuleItem();

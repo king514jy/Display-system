@@ -8,6 +8,7 @@ package view.component
 	{
 		private var icoGroup:Sprite;
 		private var nameTxt:TextField;
+		private var backSpr:Sprite;
 		//private var switchBtn
 		private var _ico:Image;
 		private var _coding:String;
@@ -31,6 +32,8 @@ package view.component
 			this.removeEventListener(Event.ADDED_TO_STAGE,init);
 			icoGroup = this.getChildByName("ico_group_mc") as Sprite;
 			nameTxt = this.getChildByName("name_txt") as TextField;
+			backSpr = this.getChildByName("back_mc") as Sprite;
+			backSpr.width = stage.stageWidth;
 		}
 		
 	}
